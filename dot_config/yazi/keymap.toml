@@ -1,0 +1,4 @@
+[[mgr.prepend_keymap]]
+on   ="M" 
+run  = "plugin chmod"
+desc = "Chmod on selected files"

@@ -1,0 +1,10 @@
+[mgr]
+show_hidden = true
+linemode = "size"
+[opener]
+edit = [
+  { run = 'nvim "$@"', block = true, for = "unix" },
+  { run = 'code "$@"', block = true, for = "unix" },
+  { run = 'vim "$@"', block = true, for = "unix" }
+]
+

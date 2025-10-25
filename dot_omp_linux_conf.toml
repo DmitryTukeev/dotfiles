@@ -1,0 +1,66 @@
+version = 3
+final_space = true
+
+[upgrade]
+  source = 'cdn'
+  interval = '168h'
+  auto = false
+  notice = false
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+
+  [[blocks.segments]]
+    template = '{{ if .WSL }}{{ end }}{{.Icon}} '
+    foreground = '#CE0056'
+    type = 'os'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      macos = 'mac'
+
+  [[blocks.segments]]
+    template = '{{ .Path }} '
+    foreground = '#55B9C4'
+    type = 'path'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      style = 'unique'
+
+  [[blocks.segments]]
+    template = '<#ffffff>on</> {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }} '
+    foreground = '#F1502F'
+    type = 'git'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      fetch_status = true
+
+  [[blocks.segments]]
+    template = '<#ffffff>via</>  {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} '
+    foreground = '#98C379'
+    type = 'node'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      fetch_version = true
+
+  [[blocks.segments]]
+    template = 'x '
+    foreground = '#C94A16'
+    type = 'status'
+    style = 'plain'
+
+[[blocks]]
+alignment = 'left'
+newline = true
+type = 'prompt'
+
+  [[blocks.segments]]
+    foreground = '#53d70a'
+    style = 'plain'
+    template = '❯'
+    type = 'text'
+
