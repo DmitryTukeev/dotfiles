@@ -1,1 +1,1 @@
-Dotfiles prepared with chezmoi.
+Dotfiles prepared with {chezmoi}(https://www.chezmoi.io/).
