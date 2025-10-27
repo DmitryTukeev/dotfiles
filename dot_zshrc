@@ -45,12 +45,13 @@ zinit light-mode for \
 
 ### End of Zinit's installer chunk
 
-# Add in zsh plugins
+# Add plugins in zsh
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
+zinit light Aloxaf/fzf-tab
 
-# Add in snippets
+# Add snippets in zsh
 zinit snippet OMZP::git
 
 # Load completions
