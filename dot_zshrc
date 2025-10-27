@@ -78,7 +78,7 @@ setopt hist_ignore_dups
 setopt hist_find_no_dups
 
 # Shetl integrations
-eval "$(fzf --zsh)"
+source <(fzf --zsh)
 eval "$(zoxide init zsh)"
 eval "$(oh-my-posh init zsh --config /home/dtukeev/.omp_linux_conf.toml)"
 export VISUAL="nvim"
