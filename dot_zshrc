@@ -2,6 +2,10 @@
 
 . "$HOME/.local/bin/env"
 
+
+# bindkey
+bindkey -e
+
 # Link to profile and brew environment
 source ~/.profile
 
