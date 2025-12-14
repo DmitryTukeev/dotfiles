@@ -25,6 +25,7 @@ alias dft='git -c diff.external=difft diff' # Show an uncommitted changes with d
 alias ol-sw='ssh -p 4022 azureuser@20.91.218.96'
 alias ol-kz='ssh -p 4022 dtukeev@62.113.59.27'
 alias marzban='ssh -p 4022 dtukeev@135.225.49.98'
+alias devops-test='ssh dtukeev@20.91.202.5'
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
