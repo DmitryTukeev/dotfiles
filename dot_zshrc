@@ -13,10 +13,10 @@ source ~/.profile
 alias l='eza -alF --icons'
 alias ls='eza -alF --icons --total-size'
 alias lt='eza -alF --icons -T -L3'
+alias cd='z'
 alias c='clear'
 alias upd='sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && brew update && brew upgrade && brew autoremove && brew cleanup && zinit self-update && zinit update --all && npm up'
 alias v='nvim'
-alias vs='code'
 alias p='pwd'
 alias f='yazi'
 alias dl='git -c diff.external=difft log -p --ext-diff' # `git log` with patches shown with difftastic
@@ -25,7 +25,7 @@ alias dft='git -c diff.external=difft diff' # Show an uncommitted changes with d
 alias ol-sw='ssh -p 4022 azureuser@20.91.218.96'
 alias ol-kz='ssh -p 4022 dtukeev@62.113.59.27'
 alias marzban='ssh -p 4022 dtukeev@135.225.49.98'
-alias devops-test='ssh dtukeev@20.91.202.5'
+alias devops-test='ssh -p 4022 dtukeev@20.91.202.5'
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
