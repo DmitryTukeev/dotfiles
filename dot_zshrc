@@ -26,7 +26,6 @@ alias ol-sw='ssh -p 4022 azureuser@20.91.218.96'
 alias ol-kz='ssh -p 4022 dtukeev@62.113.59.27'
 alias marzban='ssh -p 4022 dtukeev@135.225.49.98'
 alias devops-test='ssh -p 4022 dtukeev@20.91.202.5'
-alias tcl='rm -rf ~/.local/share/tmux/resurrect/'
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
