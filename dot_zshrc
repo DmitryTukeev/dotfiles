@@ -19,9 +19,9 @@ alias upd='sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove
 alias v='nvim'
 alias p='pwd'
 alias f='yazi'
-alias gl='git -c diff.external=difft log -p --ext-diff' # `git log` with patches shown with difftastic
-alias gs='git -c diff.external=difft show --ext-diff' # Show the most recent commit with difftastic
-alias gdf='git -c diff.external=difft diff' # Show an uncommitted changes with difftastic
+alias dl='git -c diff.external=difft log -p --ext-diff' # `git log` with patches shown with difftastic
+alias ds='git -c diff.external=difft show --ext-diff' # Show the most recent commit with difftastic
+alias df='git -c diff.external=difft diff' # Show an uncommitted changes with difftastic
 alias ol-sw='ssh -p 4022 azureuser@20.91.218.96'
 alias ol-kz='ssh -p 4022 dtukeev@62.113.59.27'
 alias marzban='ssh -p 4022 dtukeev@135.225.49.98'
