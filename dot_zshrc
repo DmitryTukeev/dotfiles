@@ -2,7 +2,6 @@
 
 . "$HOME/.local/bin/env"
 
-
 # bindkey
 bindkey -e
 
@@ -18,6 +17,7 @@ alias upd='sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove
 alias v='nvim'
 alias p='pwd'
 alias f='yazi'
+alias pw='pwsh.exe'
 alias dl='git -c diff.external=difft log -p --ext-diff' # `git log` with patches shown with difftastic
 alias ds='git -c diff.external=difft show --ext-diff' # Show the most recent commit with difftastic
 alias df='git -c diff.external=difft diff' # Show an uncommitted changes with difftastic
@@ -48,6 +48,9 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-rust
 
 ### End of Zinit's installer chunk
+
+# Correct zsh-autosuggestions color
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=\'fg=60\'
 
 # Add plugins in zsh
 zinit light zsh-users/zsh-syntax-highlighting
