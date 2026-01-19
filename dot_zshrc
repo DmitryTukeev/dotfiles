@@ -17,7 +17,9 @@ alias upd='sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove
 alias v='nvim'
 alias p='pwd'
 alias f='yazi'
-alias pw='pwsh.exe'
+alias tm='tmux'
+alias lg='lazygit'
+alias ld='lazydocker'
 alias dl='git -c diff.external=difft log -p --ext-diff' # `git log` with patches shown with difftastic
 alias ds='git -c diff.external=difft show --ext-diff' # Show the most recent commit with difftastic
 alias df='git -c diff.external=difft diff' # Show an uncommitted changes with difftastic
