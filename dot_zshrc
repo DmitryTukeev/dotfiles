@@ -20,6 +20,7 @@ alias f='yazi'
 alias tm='tmux'
 alias lg='lazygit'
 alias ld='lazydocker'
+alias qw='qwen'
 alias dl='git -c diff.external=difft log -p --ext-diff' # `git log` with patches shown with difftastic
 alias ds='git -c diff.external=difft show --ext-diff' # Show the most recent commit with difftastic
 alias df='git -c diff.external=difft diff' # Show an uncommitted changes with difftastic
