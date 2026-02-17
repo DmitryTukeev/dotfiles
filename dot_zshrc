@@ -26,7 +26,7 @@ alias ds='git -c diff.external=difft show --ext-diff' # Show the most recent com
 alias df='git -c diff.external=difft diff' # Show an uncommitted changes with difftastic
 alias ol-sw='ssh -p 4022 azureuser@20.91.218.96'
 alias ol-kz='ssh -p 4022 dtukeev@62.113.59.27'
-alias marzban='ssh -p 4022 dtukeev@135.225.49.98'
+alias marzban='ssh -L 8000:localhost:8000 dtukeev@135.225.49.98'
 alias devops-test='ssh -p 4022 dtukeev@20.91.202.5'
 
 ### Added by Zinit's installer
