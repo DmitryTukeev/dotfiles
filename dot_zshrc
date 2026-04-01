@@ -13,7 +13,7 @@ alias l='eza -alF --icons'
 alias ls='eza -alF --icons --total-size'
 alias lt='eza -alF --icons -T -L3'
 alias c='clear'
-alias upd='sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && brew update && brew upgrade && brew autoremove && brew cleanup && zinit self-update && zinit update --all && npm up'
+alias upd='sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && zinit self-update && zinit update --all && npm up && brew update && brew upgrade && brew autoremove && brew cleanup'
 alias v='nvim'
 alias p='pwd'
 alias f='yazi'
@@ -28,6 +28,29 @@ alias ol-sw='ssh -p 4022 azureuser@20.91.218.96'
 alias ol-kz='ssh -p 4022 dtukeev@62.113.59.27'
 alias marzban='ssh -L 8000:localhost:8000 dtukeev@135.225.49.98'
 alias devops-test='ssh -p 4022 dtukeev@20.91.202.5'
+
+# Qwen Code Headless Mode alias
+# Load the Zsh hooks system (if not already loaded)
+autoload -Uz add-zle-hook-widget
+
+# The function that adjusts the cursor position
+_qwq_cursor_fix() {
+  # Check if the flag was set by our command
+  if [[ $_QWQ_FLAG == 1 ]]; then
+    # Move the cursor to the 9th position (between the quotes)
+    CURSOR=9
+    # Reset the flag so it doesn't affect other commands
+    _QWQ_FLAG=0
+  fi
+}
+# Add the function to the line initialization hook
+add-zle-hook-widget line-init _qwq_cursor_fix
+
+# The command itself (replaces your alias)
+qwq() {
+  print -z 'qwen -p "" -y'
+  _QWQ_FLAG=1
+}
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
