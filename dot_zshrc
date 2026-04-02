@@ -8,6 +8,11 @@ bindkey -e
 # Link to profile and brew environment
 source ~/.profile
 
+# Automatically start tmux
+if [[ -z "$TMUX" ]] && [[ $- == *i* ]]; then
+    exec tmux new-session -A -s main
+fi
+
 # Aliases
 alias l='eza -alF --icons'
 alias ls='eza -alF --icons --total-size'
