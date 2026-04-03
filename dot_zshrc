@@ -34,6 +34,11 @@ alias ol-kz='ssh -p 4022 dtukeev@62.113.59.27'
 alias marzban='ssh -L 8000:localhost:8000 dtukeev@135.225.49.98'
 alias devops-test='ssh -p 4022 dtukeev@20.91.202.5'
 
+# Open buffer line in editor
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey '^g^g' edit-command-line
+
 # Qwen Code Headless Mode alias
 # Load the Zsh hooks system (if not already loaded)
 autoload -Uz add-zle-hook-widget
@@ -123,3 +128,4 @@ source <(fzf --zsh)
 eval "$(zoxide init zsh)"
 eval "$(oh-my-posh init zsh --config /home/dtukeev/.omp_linux_conf.toml)"
 export EDITOR="nvim"
+export VISUAL="nvim"
