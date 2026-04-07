@@ -8,6 +8,9 @@ bindkey -e
 # Link to profile and brew environment
 source ~/.profile
 
+# Correct zsh-autosuggestions color
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=60'
+
 # Automatically start tmux
 if [[ -z "$TMUX" ]] && [[ $- == *i* ]]; then
     exec tmux new-session -A -s main
@@ -92,14 +95,8 @@ zinit light-mode for \
 
 ### End of Zinit's installer chunk
 
-# Correct zsh-autosuggestions color
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=\'fg=60\'
-
 # Add plugins in zsh
-zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
-zinit light zsh-users/zsh-autosuggestions
-zinit light Aloxaf/fzf-tab
 
 # Add snippets in zsh
 zinit snippet OMZP::git
@@ -110,6 +107,10 @@ zinit cdreplay -q
 
 # Completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
+zinit light Aloxaf/fzf-tab
+zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-syntax-highlighting
 
 # History
 HISTSIZE=5000
