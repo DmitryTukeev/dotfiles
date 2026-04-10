@@ -11,19 +11,6 @@ source ~/.profile
 # Correct zsh-autosuggestions color
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=60'
 
-# Fix runtime dir early
-export XDG_RUNTIME_DIR="/run/user/$(id -u)"
-if [ ! -d "$XDG_RUNTIME_DIR" ]; then
-  export XDG_RUNTIME_DIR="/tmp/xdg-runtime-$(id -u)"
-  mkdir -p "$XDG_RUNTIME_DIR"
-  chmod 700 "$XDG_RUNTIME_DIR"
-fi
-
-# Automatically start tmux
-if [[ -z "$TMUX" ]] && [[ $- == *i* ]]; then
-    exec tmux new-session -A -s main
-fi
-
 # Aliases
 alias l='eza -alF --icons'
 alias ls='eza -alF --icons --total-size'
