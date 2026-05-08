@@ -10,11 +10,6 @@ bindkey -e
 # Link to profile and brew environment
 source ~/.profile
 
-# Auto-start tmux
-if [[ -z "$TMUX" ]] && [[ $- == *i* ]] && command -v tmux >/dev/null 2>&1; then
-  exec tmux new-session -A -s main
-fi
-
 # Correct zsh-autosuggestions color
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=60'
 
