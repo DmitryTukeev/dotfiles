@@ -22,7 +22,7 @@ alias l='eza -alF --icons'
 alias ls='eza -alF --icons --total-size'
 alias lt='eza -alF --icons -T -L3'
 alias c='clear'
-alias upd='sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && zinit self-update && zinit update --all && npm up'
+alias upd='sudo apt full-upgrade -y && sudo apt autoremove -y && zinit self-update && zinit update --all && npm up'
 alias v='nvim'
 alias p='pwd'
 alias f='yazi'
@@ -163,3 +163,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+
+# Pi
+export PATH="/home/dtukeev/.local/share/pi-node/node-v22.23.1-linux-x64/bin:$PATH"
