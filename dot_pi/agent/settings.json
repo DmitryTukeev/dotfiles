@@ -1,0 +1,11 @@
+{
+  "lastChangelogVersion": "0.83.0",
+  "defaultProvider": "azure",
+  "defaultModel": "model-router",
+  "defaultThinkingLevel": "high",
+  "compaction": {
+    "enabled": true
+  },
+  "theme": "dark",
+  "shellPath": "/usr/bin/zsh",
+}
