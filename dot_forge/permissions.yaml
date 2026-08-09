@@ -1,0 +1,13 @@
+policies:
+- permission: confirm
+  rule:
+    write: '**/*'
+- permission: allow
+  rule:
+    read: '**/*'
+- permission: confirm
+  rule:
+    command: '*'
+- permission: confirm
+  rule:
+    url: '*'
