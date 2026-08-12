@@ -7,5 +7,5 @@
     "enabled": true
   },
   "theme": "dark",
-  "shellPath": "/usr/bin/zsh",
+  "shellPath": "/usr/bin/zsh"
 }
